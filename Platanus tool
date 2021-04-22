@@ -1,0 +1,6 @@
+FROM ubuntu
+LABEL Description="This image is used for running Platanus"
+RUN apt-get update && apt-get install -y wget && apt-get gzip
+#Platanus 1.4.5, platanus_trim 1.0.7, platanus_internal_trim 1.0.
+ADD /local/path/to/file /container/path/to/destination
+RUN platanus*
